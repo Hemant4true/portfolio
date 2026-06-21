@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Pixelbasel';
+  src: url('/fonts/Pixelbasel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0B0D0F;
+  background-image:
+    linear-gradient(rgba(0,255,156,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,156,0.025) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+::selection {
+  background: #00FF9C;
+  color: #0B0D0F;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.text-glow {
+  text-shadow: 0 0 18px rgba(0,255,156,0.35);
+}
+
+@keyframes type-reveal {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #23272D;
+  border-radius: 3px;
+}
