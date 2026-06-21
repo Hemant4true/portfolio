@@ -2,6 +2,8 @@
 
 A modern, terminal-themed developer portfolio built to showcase projects across full-stack development, applied AI/ML, and network security.
 
+**Live Preview**: [https://hemantportfolio-theta.vercel.app/](https://hemantportfolio-theta.vercel.app/)
+
 ## ✨ Features
 
 - **Retro Terminal Aesthetic**: Clean, developer-focused UI featuring authentic monospace typography and custom pixel fonts (`Pixelbasel`).
